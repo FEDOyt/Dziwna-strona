@@ -9,11 +9,29 @@ body {
     background-color: lightskyblue ;
 }
 
-.button {
-    background-color: crimson;
-    @apply font-bold py-2 px-4 rounded;
+.myButton {
+	box-shadow: 3px 4px 0px 0px #899599;
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#ededed;
+	border-radius:15px;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color:#3a8a9e;
+	font-family:Impact;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
 }
-
+.myButton:hover {
+	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	background-color:#bab1ba;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
 
 </style>
 
@@ -22,7 +40,7 @@ body {
 <div class=center>
     <h1>Nie mam pojęcie co ja tutaj robie ale ok</h1>
     <p>lubie papaja</p>
-    <button class=button onclick="hello()">Papaj</button>  
+    <a href="https://youtu.be/1dOt_VcbgyA" class="myButton">Papaj</a>
 
 <script>  
 function hello (){
