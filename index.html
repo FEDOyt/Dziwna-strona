@@ -62,13 +62,16 @@ html, body {
     <p><a href="https://youtu.be/1dOt_VcbgyA" class="myButton">GRAJ</a></p>
     <canvas width="400" height="400" id="game"></canvas>
 
-<script>  
+<script>
+<input type="checkbox" id="script" class="hidden"/>
+
+
 var canvas = document.getElementById('game');
 var context = canvas.getContext('2d');
 
 var grid = 16;
 var count = 0;
-  
+
 var snake = {
   x: 160,
   y: 160,
